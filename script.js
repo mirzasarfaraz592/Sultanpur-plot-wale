@@ -1,171 +1,81 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Theme Toggle Logic
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    const moonIcon = document.getElementById('moon-icon');
-    const sunIcon = document.getElementById('sun-icon');
-    const htmlElement = document.documentElement;
+    // --- Mobile Menu Toggle ---
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileLinks = document.querySelectorAll('.header__mobile-link');
 
-    // Check for saved user preference
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-        htmlElement.setAttribute('data-theme', savedTheme);
-        updateIcons(savedTheme);
+    if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('header__mobile-menu--open');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (mobileMenu.classList.contains('header__mobile-menu--open')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close menu on link click
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('header__mobile-menu--open');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            });
+        });
     }
 
-    themeToggleBtn.addEventListener('click', () => {
-        const currentTheme = htmlElement.getAttribute('data-theme');
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        
-        htmlElement.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        updateIcons(newTheme);
+    // --- Active Link Highlighting on Scroll ---
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.header__nav-link, .header__mobile-link');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= (sectionTop - 200)) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('header__nav-link--active');
+            link.classList.remove('header__mobile-link--active');
+            if (link.getAttribute('href') === `#${current}`) {
+                if(link.classList.contains('header__nav-link')) {
+                    link.classList.add('header__nav-link--active');
+                } else {
+                    link.classList.add('header__mobile-link--active');
+                }
+            }
+        });
     });
 
-    function updateIcons(theme) {
-        if (theme === 'dark') {
-            moonIcon.style.display = 'block';
-            sunIcon.style.display = 'none';
-        } else {
-            moonIcon.style.display = 'none';
-            sunIcon.style.display = 'block';
-        }
-    }
-
-    // Search Functionality
-    const searchInput = document.getElementById('search-input');
-    
-    if (searchInput) {
-        // Enable flex on location container to use the 'order' CSS property
-        const firstLocation = document.querySelector('.location-item');
-        if (firstLocation && firstLocation.parentElement) {
-            firstLocation.parentElement.style.display = 'flex';
-            firstLocation.parentElement.style.flexDirection = 'column';
-        }
-
-        searchInput.addEventListener('input', (e) => {
-            const searchTerm = e.target.value.toLowerCase().trim();
+    // --- Contact Form to WhatsApp ---
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
             
-            // Sections to hide/show during search
-            const heroSection = document.getElementById('home');
-            const gallerySection = document.getElementById('gallery');
-            const visitingCardSection = document.getElementById('visiting-card');
-            const contactSection = document.getElementById('contact');
-            const footer = document.querySelector('.footer');
-            
-            if (searchTerm === '') {
-                if (heroSection) heroSection.style.display = '';
-                if (gallerySection) gallerySection.style.display = '';
-                if (visitingCardSection) visitingCardSection.style.display = '';
-                if (contactSection) contactSection.style.display = '';
-                if (footer) footer.style.display = '';
-            } else {
-                if (heroSection) heroSection.style.display = 'none';
-                if (gallerySection) gallerySection.style.display = 'none';
-                if (visitingCardSection) visitingCardSection.style.display = 'none';
-                if (contactSection) contactSection.style.display = 'none';
-                if (footer) footer.style.display = 'none';
-                
-                // Scroll to top to see results if scrolled down
-                window.scrollTo({ top: 0, behavior: 'smooth' });
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+
+            // Target number: 9118918018
+            const targetNumber = '919118918018'; 
+            let whatsappText = `Hello, I would like to schedule a site visit or inquire about a plot.%0A%0A`;
+            whatsappText += `*Name:* ${name}%0A`;
+            whatsappText += `*Phone:* ${phone}%0A`;
+            if (message) {
+                whatsappText += `*Requirements:* ${message}`;
             }
 
-            // Filter Locations
-            const locationItems = document.querySelectorAll('.location-item');
-            locationItems.forEach(item => {
-                item.style.display = 'block';
-                if (searchTerm === '') {
-                    item.style.order = '0';
-                    item.style.opacity = '1';
-                } else {
-                    const text = item.innerText.toLowerCase();
-                    if (text.includes(searchTerm)) {
-                        item.style.order = '-1';
-                        item.style.opacity = '1';
-                    } else {
-                        item.style.order = '1';
-                        item.style.opacity = '0.2'; // Dim non-matching items further
-                    }
-                }
-            });
-            
-            // Filter Properties
-            const propertyCards = document.querySelectorAll('.property-card');
-            propertyCards.forEach(card => {
-                card.style.display = '';
-                if (searchTerm === '') {
-                    card.style.order = '0';
-                    card.style.opacity = '1';
-                } else {
-                    const text = card.innerText.toLowerCase();
-                    if (text.includes(searchTerm)) {
-                        card.style.order = '-1';
-                        card.style.opacity = '1';
-                    } else {
-                        card.style.order = '1';
-                        card.style.opacity = '0.2'; // Dim non-matching items further
-                    }
-                }
-            });
+            const whatsappUrl = `https://wa.me/${targetNumber}?text=${whatsappText}`;
+            window.open(whatsappUrl, '_blank');
         });
     }
-
-    // Mobile Menu Toggle
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const mainNav = document.getElementById('main-nav');
-    
-    if (mobileMenuBtn && mainNav) {
-        mobileMenuBtn.addEventListener('click', () => {
-            mainNav.classList.toggle('active');
-        });
-        
-        // Close menu on link click
-        mainNav.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mainNav.classList.remove('active');
-            });
-        });
-    }
-
-    // Form submission -> WhatsApp redirect
-    const contactForm = document.getElementById('contact-form');
-    const formSuccess = document.getElementById('form-success');
-
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        // Get form values securely
-        const nameInput = document.getElementById('name');
-        const phoneInput = document.getElementById('phone');
-        const messageInput = document.getElementById('message');
-
-        const name = nameInput.value.trim();
-        const phone = phoneInput.value.trim();
-        const message = messageInput.value.trim();
-
-        // Basic validation
-        if (!name || !phone) {
-            // Using DOM manipulation instead of alert() for security skills
-            return;
-        }
-
-        // Construct WhatsApp Message
-        const whatsappNumber = '919118918018'; // Primary contact number
-        let text = `Hello Sultanpur Plot Wale,\n\nI have a new inquiry:\n*Name:* ${name}\n*Phone:* ${phone}`;
-        
-        if (message) {
-            text += `\n*Requirements:* ${message}`;
-        }
-
-        const encodedText = encodeURIComponent(text);
-        const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
-
-        // Show success UI (DOM modification safely via styles, avoiding innerHTML/alert)
-        contactForm.style.display = 'none';
-        formSuccess.style.display = 'block';
-
-        // Redirect to WhatsApp
-        setTimeout(() => {
-            window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
-        }, 1500);
-    });
 });

@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sultanpur Plot Wale | Residential & Commercial Plots</title>
+    <meta name="description" content="Looking for residential or commercial plots in Sultanpur, Uttar Pradesh? We offer verified properties near Ayodhya Bypass Highway, Purvanchal Expressway, and more.">
+    <link rel="stylesheet" href="./style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="#" class="header__logo">
+                <img src="./logo.jpg" alt="Sultanpur Plot Wale Logo" class="header__logo-img" style="border-radius: 50%;">
+                <div class="header__logo-text">
+                    <span class="header__logo-name">Sultanpur Plot Wale</span>
+                    <span class="header__logo-tagline">Premium Real Estate</span>
+                </div>
+            </a>
+            
+            <nav class="header__nav">
+                <a href="#home" class="header__nav-link header__nav-link--active">Home</a>
+                <a href="#locations" class="header__nav-link">Locations</a>
+                <a href="#properties" class="header__nav-link">Plots</a>
+                <a href="#why-us" class="header__nav-link">Why Us</a>
+                <a href="#faq" class="header__nav-link">FAQs</a>
+            </nav>
+
+            <div class="header__ctas">
+                <a href="tel:+919118918018" class="header__phone">
+                    <i class="fa-solid fa-phone"></i> +91 91189 18018
+                </a>
+                <a href="https://wa.me/919118918018" target="_blank" class="btn btn--whatsapp btn--sm">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+                </a>
+            </div>
+
+            <button class="header__menu-btn" id="mobileMenuBtn">
+                <i class="fa-solid fa-bars fa-lg"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="header__mobile-menu" id="mobileMenu">
+            <nav>
+                <a href="#home" class="header__mobile-link header__mobile-link--active">Home</a>
+                <a href="#locations" class="header__mobile-link">Locations</a>
+                <a href="#properties" class="header__mobile-link">Plots</a>
+                <a href="#why-us" class="header__mobile-link">Why Us</a>
+                <a href="#faq" class="header__mobile-link">FAQs</a>
+            </nav>
+            <div class="header__mobile-ctas">
+                <a href="tel:+919118918018" class="btn btn--primary btn--full">Call +91 91189 18018</a>
+                <a href="tel:+918810916574" class="btn btn--primary btn--full" style="margin-top:0.5rem">Call +91 88109 16574</a>
+                <a href="https://wa.me/919118918018" class="btn btn--whatsapp btn--full">WhatsApp Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero__bg"></div>
+            <div class="hero__overlay"></div>
+            <div class="container hero__content">
+                <h1 class="hero__title">Exclusive Lands. <br class="hero__br"><span class="hero__title-highlight">Premium Living.</span></h1>
+                <p class="hero__subtitle">Looking for residential or commercial plots in Sultanpur, Uttar Pradesh? We offer verified, prime properties near Ayodhya Bypass Highway, Purvanchal Expressway, Kamucha, Katka, and Amhat with 100% Clear Title.</p>
+                
+                <div class="hero__ctas">
+                    <a href="#properties" class="btn btn--primary btn--lg">View Properties</a>
+                    <a href="https://wa.me/919118918018" class="btn btn--whatsapp btn--lg">
+                        <i class="fa-brands fa-whatsapp"></i> Message Us
+                    </a>
+                </div>
+
+                <div class="hero__trust">
+                    <div class="hero__trust-item"><i class="fa-solid fa-check-circle"></i> Immediate Registry</div>
+                    <div class="hero__trust-item"><i class="fa-solid fa-check-circle"></i> Dakhil Kharij Approved</div>
+                    <div class="hero__trust-item"><i class="fa-solid fa-check-circle"></i> Prime Locations</div>
+                    <div class="hero__trust-item"><i class="fa-solid fa-check-circle"></i> 100% Clear Title</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="section section--surface filter">
+            <div class="container">
+                <div class="filter__header">
+                    <h2 class="filter__title">Find Your Perfect Plot</h2>
+                    <p class="filter__desc">Search through our exclusive collection of premium properties</p>
+                </div>
+                <div class="filter__form">
+                    <div class="filter__fields">
+                        <div class="filter__field">
+                            <label class="filter__label">Location</label>
+                            <select class="filter__select">
+                                <option>All Locations</option>
+                                <option>Ayodhya Bypass Highway</option>
+                                <option>Purvanchal Expressway</option>
+                                <option>Kamucha & Katka Chauraha</option>
+                                <option>Badshahpur & Amhat Bypass</option>
+                            </select>
+                        </div>
+                        <div class="filter__field">
+                            <label class="filter__label">Plot Size</label>
+                            <select class="filter__select">
+                                <option>Any Size</option>
+                                <option>1000 Sq Ft</option>
+                                <option>1250 Sq Ft</option>
+                                <option>1500 Sq Ft</option>
+                                <option>2000+ Sq Ft / Farm Land</option>
+                            </select>
+                        </div>
+                        <div class="filter__field">
+                            <label class="filter__label">Property Type</label>
+                            <select class="filter__select">
+                                <option>Residential Plot</option>
+                                <option>Commercial Plot</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter__checks">
+                        <label class="filter__check"><input type="checkbox" checked> Highway Facing</label>
+                        <label class="filter__check"><input type="checkbox" checked> Corner Plot</label>
+                        <label class="filter__check"><input type="checkbox" checked> Fully Developed</label>
+                    </div>
+                    <div class="filter__actions">
+                        <button class="btn btn--primary btn--full"><i class="fa-solid fa-search"></i> Search Properties</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Properties Grid -->
+        <section id="properties" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-header__label">PREMIUM LISTINGS</span>
+                    <h2 class="section-header__title">Available Plots</h2>
+                    <p class="section-header__desc">Browse our handpicked selection of premium plots in prime locations of Sultanpur.</p>
+                </div>
+
+                <div class="prop-grid">
+                    <!-- New Property: KNIPSS Faridipur -->
+                    <div class="card prop-card" style="border: 2px solid var(--color-accent);">
+                        <div class="prop-card__img-wrap">
+                            <video src="./webvideo.mp4" controls muted loop style="width: 100%; aspect-ratio: 16/10; object-fit: cover;"></video>
+                            <div class="prop-card__badge badge badge--featured">🔥 HOT DEAL</div>
+                        </div>
+                        <div class="prop-card__body">
+                            <a href="#contact" class="prop-card__title-link"><h3 class="prop-card__title">#1 - Near KNIPSS Faridipur College</h3></a>
+                            <div class="prop-card__location"><i class="fa-solid fa-location-dot"></i> Petrol Pump Ke Samne, Highway se 50m andar</div>
+                            
+                            <div class="prop-card__metrics">
+                                <div class="prop-card__metric">
+                                    <span class="prop-card__metric-label">Size</span>
+                                    <span class="prop-card__metric-value">1000 - 2000 SqFt</span>
+                                </div>
+                                <div class="prop-card__metric">
+                                    <span class="prop-card__metric-label">Type</span>
+                                    <span class="prop-card__metric-value">Residential</span>
+                                </div>
+                                <div class="prop-card__metric">
+                                    <span class="prop-card__metric-label">Registry</span>
+                                    <span class="prop-card__metric-value">Immediate</span>
+                                </div>
+                            </div>
+
+                            <div class="prop-card__total" style="background:var(--gold-100)">
+                                <span class="prop-card__total-label">Price</span>
+                                <span class="prop-card__total-value prop-card__metric-value--price">₹750 / SqFt</span>
+                            </div>
+                            
+                            <div class="prop-card__features">
+                                <span class="prop-card__feature"><i class="fa-solid fa-check"></i> Damar Road</span>
+                                <span class="prop-card__feature"><i class="fa-solid fa-check"></i> Bijli, Nali</span>
+                                <span class="prop-card__feature"><i class="fa-solid fa-check"></i> Dakhil Kharij</span>
+                            </div>
+
+                            <div class="prop-card__ctas">
+                                <a href="tel:+919118918018" class="btn btn--primary prop-card__detail-btn">Book Visit</a>
+                                <a href="https://wa.me/919118918018?text=I am interested in KNIPSS Faridipur Plot (Rs 750)" class="btn btn--whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Property 2: KNIPSS Faridipur (750) -->
+                    <div class="card prop-card">
+                        <div class="prop-card__img-wrap">
+                            <video src="./webvideo22.mp4" controls muted loop style="width: 100%; aspect-ratio: 16/10; object-fit: cover;"></video>
+                            <div class="prop-card__badge badge badge--budget">BUDGET FRIENDLY</div>
+                        </div>
+                        <div class="prop-card__body">
+                            <a href="#contact" class="prop-card__title-link"><h3 class="prop-card__title">#2 - Near KNIPSS Faridipur College</h3></a>
+                            <div class="prop-card__location"><i class="fa-solid fa-location-dot"></i> Petrol Pump Ke Samne, Highway se 50m andar</div>
+                            
+                            <div class="prop-card__metrics">
+                                <div class="prop-card__metric">
+                                    <span class="prop-card__metric-label">Size</span>
+                                    <span class="prop-card__metric-value">1000 - 2000 SqFt</span>
+                                </div>
+                                <div class="prop-card__metric">
+                                    <span class="prop-card__metric-label">Type</span>
+                                    <span class="prop-card__metric-value">Residential</span>
+                                </div>
+                                <div class="prop-card__metric">
+                                    <span class="prop-card__metric-label">Registry</span>
+                                    <span class="prop-card__metric-value">Immediate</span>
+                                </div>
+                            </div>
+
+                            <div class="prop-card__total">
+                                <span class="prop-card__total-label">Price</span>
+                                <span class="prop-card__total-value prop-card__metric-value--price">₹750 / SqFt</span>
+                            </div>
+                            
+                            <div class="prop-card__features">
+                                <span class="prop-card__feature"><i class="fa-solid fa-check"></i> Damar Road</span>
+                                <span class="prop-card__feature"><i class="fa-solid fa-check"></i> Bijli, Nali</span>
+                                <span class="prop-card__feature"><i class="fa-solid fa-check"></i> Dakhil Kharij</span>
+                            </div>
+
+                            <div class="prop-card__ctas">
+                                <a href="tel:+919118918018" class="btn btn--primary prop-card__detail-btn">Book Visit</a>
+                                <a href="https://wa.me/919118918018?text=I am interested in KNIPSS Faridipur Plot (Rs 750)" class="btn btn--whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Property 1: Ayodhya Bypass Highway -->
+                    <div class="card prop-card" style="border: 2px solid var(--color-accent);">
+                        <div class="prop-card__img-wrap">
+                            <video src="./plot-video.mp4" controls muted loop style="width: 100%; aspect-ratio: 16/10; object-fit: cover;"></video>
+                            <div class="prop-card__badge badge badge--featured">🔥 HIGHWAY PRIME</div>
+                        </div>
+                        <div class="prop-card__body">
+                            <a href="#contact" class="prop-card__title-link"><h3 class="prop-card__title">#3 - Ayodhya Bypass Highway Plot</h3></a>
+                            <div class="prop-card__location"><i class="fa-solid fa-location-dot"></i> Direct Highway Access</div>
+                            
+                            <div class="prop-card__metrics">
+                                <div class="prop-card__metric">
+                                    <span class="prop-card__metric-label">Sizes</span>
+                                    <span class="prop-card__metric-value">1000 - 2000 SqFt</span>
+                                </div>
+                                <div class="prop-card__metric">
+                                    <span class="prop-card__metric-label">Type</span>
+                                    <span class="prop-card__metric-value">Resi/Comm</span>
+                                </div>
+                                <div class="prop-card__metric">
+                                    <span class="prop-card__metric-label">Registry</span>
+                                    <span class="prop-card__metric-value">Immediate</span>
+                                </div>
+                            </div>
+
+                            <div class="prop-card__total" style="background:var(--gold-100)">
+                                <span class="prop-card__total-label">Starting Price</span>
+                                <span class="prop-card__total-value prop-card__metric-value--price">Contact for Price</span>
+                            </div>
+                            
+                            <div class="prop-card__features">
+                                <span class="prop-card__feature"><i class="fa-solid fa-check"></i> 40ft Wide Road</span>
+                                <span class="prop-card__feature"><i class="fa-solid fa-check"></i> Dakhil Kharij</span>
+                            </div>
+
+                            <div class="prop-card__ctas">
+                                <a href="tel:+919118918018" class="btn btn--primary prop-card__detail-btn">Call Now</a>
+                                <a href="https://wa.me/919118918018?text=I am interested in the Ayodhya Bypass Highway Plot" class="btn btn--whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Property 2: Purvanchal Expressway -->
+                    <div class="card prop-card">
+                        <div class="prop-card__img-wrap">
+                            <video src="./plot-video-6.mp4" controls muted loop style="width: 100%; aspect-ratio: 16/10; object-fit: cover;"></video>
+                            <div class="prop-card__badge badge badge--highway">Connectivity</div>
+                        </div>
+                        <div class="prop-card__body">
+                            <a href="#contact" class="prop-card__title-link"><h3 class="prop-card__title">#4 - Purvanchal Expressway Cut</h3></a>
+                            <div class="prop-card__location"><i class="fa-solid fa-location-dot"></i> Near Expressway Connectivity Road</div>
+                            
+                            <div class="prop-card__metrics">
+                                <div class="prop-card__metric">
+                                    <span class="prop-card__metric-label">Size</span>
+                                    <span class="prop-card__metric-value">1250 / 1500 SqFt</span>
+                                </div>
+                                <div class="prop-card__metric">
+                                    <span class="prop-card__metric-label">Type</span>
+                                    <span class="prop-card__metric-value">Residential</span>
+                                </div>
+                                <div class="prop-card__metric">
+                                    <span class="prop-card__metric-label">Status</span>
+                                    <span class="prop-card__metric-value">Fast Selling</span>
+                                </div>
+                            </div>
+
+                            <div class="prop-card__total">
+                                <span class="prop-card__total-label">Starting Price</span>
+                                <span class="prop-card__total-value prop-card__metric-value--price">₹750 / SqFt</span>
+                            </div>
+                            
+                            <div class="prop-card__features">
+                                <span class="prop-card__feature"><i class="fa-solid fa-check"></i> 30ft Road</span>
+                                <span class="prop-card__feature"><i class="fa-solid fa-check"></i> Electricity Poles</span>
+                            </div>
+
+                            <div class="prop-card__ctas">
+                                <a href="tel:+919118918018" class="btn btn--secondary prop-card__detail-btn">Call Now</a>
+                                <a href="https://wa.me/919118918018?text=I am interested in the Purvanchal Expressway Plot (Rs 750)" class="btn btn--whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Property 3: Kamucha & Katka Chauraha -->
+                    <div class="card prop-card">
+                        <div class="prop-card__img-wrap">
+                            <video src="./plot-video-2.mp4" controls muted loop style="width: 100%; aspect-ratio: 16/10; object-fit: cover;"></video>
+                            <div class="prop-card__badge badge badge--corner">Corner Plot Options</div>
+                        </div>
+                        <div class="prop-card__body">
+                            <a href="#contact" class="prop-card__title-link"><h3 class="prop-card__title">#5 - Kamucha & Katka Chauraha</h3></a>
+                            <div class="prop-card__location"><i class="fa-solid fa-location-dot"></i> Ayodhya Bypass Highway Ram Janki Daba ke samne, highway se only 50meter andar</div>
+                            
+                            <div class="prop-card__metrics">
+                                <div class="prop-card__metric">
+                                    <span class="prop-card__metric-label">Size</span>
+                                    <span class="prop-card__metric-value">1000 - 1500 SqFt</span>
+                                </div>
+                                <div class="prop-card__metric">
+                                    <span class="prop-card__metric-label">Type</span>
+                                    <span class="prop-card__metric-value">Commercial</span>
+                                </div>
+                                <div class="prop-card__metric">
+                                    <span class="prop-card__metric-label">Registry</span>
+                                    <span class="prop-card__metric-value">Available</span>
+                                </div>
+                            </div>
+
+                            <div class="prop-card__total">
+                                <span class="prop-card__total-label">Starting Price</span>
+                                <span class="prop-card__total-value prop-card__metric-value--price">₹1750 / SqFt</span>
+                            </div>
+                            
+                            <div class="prop-card__features">
+                                <span class="prop-card__feature"><i class="fa-solid fa-check"></i> Near School</span>
+                                <span class="prop-card__feature"><i class="fa-solid fa-check"></i> High Footfall</span>
+                            </div>
+
+                            <div class="prop-card__ctas">
+                                <a href="tel:+919118918018" class="btn btn--secondary prop-card__detail-btn">Call Now</a>
+                                <a href="https://wa.me/919118918018?text=I am interested in Ram Janki Daba Plot (Rs 1750)" class="btn btn--whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Property 4: Badshahpur & Amhat -->
+                    <div class="card prop-card">
+                        <div class="prop-card__img-wrap">
+                            <video src="./plot-video-3.mp4" controls muted loop style="width: 100%; aspect-ratio: 16/10; object-fit: cover;"></video>
+                            <div class="prop-card__badge badge badge--budget">Budget Friendly</div>
+                        </div>
+                        <div class="prop-card__body">
+                            <a href="#contact" class="prop-card__title-link"><h3 class="prop-card__title">#6 - Badshahpur & Amhat Bypass</h3></a>
+                            <div class="prop-card__location"><i class="fa-solid fa-location-dot"></i> Saifullahganj Tiyari</div>
+                            
+                            <div class="prop-card__metrics">
+                                <div class="prop-card__metric">
+                                    <span class="prop-card__metric-label">Size</span>
+                                    <span class="prop-card__metric-value">1000 SqFt</span>
+                                </div>
+                                <div class="prop-card__metric">
+                                    <span class="prop-card__metric-label">Type</span>
+                                    <span class="prop-card__metric-value">Residential</span>
+                                </div>
+                                <div class="prop-card__metric">
+                                    <span class="prop-card__metric-label">Status</span>
+                                    <span class="prop-card__metric-value">Available</span>
+                                </div>
+                            </div>
+
+                            <div class="prop-card__total">
+                                <span class="prop-card__total-label">Starting Price</span>
+                                <span class="prop-card__total-value prop-card__metric-value--price">₹350 / SqFt</span>
+                            </div>
+                            
+                            <div class="prop-card__features">
+                                <span class="prop-card__feature"><i class="fa-solid fa-check"></i> Boundary Wall</span>
+                                <span class="prop-card__feature"><i class="fa-solid fa-check"></i> Immediate Possession</span>
+                            </div>
+
+                            <div class="prop-card__ctas">
+                                <a href="tel:+919118918018" class="btn btn--secondary prop-card__detail-btn">Call Now</a>
+                                <a href="https://wa.me/919118918018?text=I am interested in Saifullahganj Tiyari Plot (Rs 350)" class="btn btn--whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Property 5: KNIPSS -->
+                    <div class="card prop-card">
+                        <div class="prop-card__img-wrap">
+                            <video src="./plot-video-4.mp4" controls muted loop style="width: 100%; aspect-ratio: 16/10; object-fit: cover;"></video>
+                            <div class="prop-card__badge badge badge--popular">Developed</div>
+                        </div>
+                        <div class="prop-card__body">
+                            <a href="#contact" class="prop-card__title-link"><h3 class="prop-card__title">#7 - Near KNIPSS College</h3></a>
+                            <div class="prop-card__location"><i class="fa-solid fa-location-dot"></i> Ayodhya Bypass Highway Nekrahi, highway se only 200meter under</div>
+                            
+                            <div class="prop-card__metrics">
+                                <div class="prop-card__metric">
+                                    <span class="prop-card__metric-label">Size</span>
+                                    <span class="prop-card__metric-value">1250 SqFt</span>
+                                </div>
+                                <div class="prop-card__metric">
+                                    <span class="prop-card__metric-label">Type</span>
+                                    <span class="prop-card__metric-value">Residential</span>
+                                </div>
+                                <div class="prop-card__metric">
+                                    <span class="prop-card__metric-label">Status</span>
+                                    <span class="prop-card__metric-value">Available</span>
+                                </div>
+                            </div>
+
+                            <div class="prop-card__total">
+                                <span class="prop-card__total-label">Starting Price</span>
+                                <span class="prop-card__total-value prop-card__metric-value--price">₹650 / SqFt</span>
+                            </div>
+                            
+                            <div class="prop-card__features">
+                                <span class="prop-card__feature"><i class="fa-solid fa-check"></i> Damar Road</span>
+                                <span class="prop-card__feature"><i class="fa-solid fa-check"></i> Bijli, Nali</span>
+                            </div>
+
+                            <div class="prop-card__ctas">
+                                <a href="tel:+919118918018" class="btn btn--secondary prop-card__detail-btn">Call Now</a>
+                                <a href="https://wa.me/919118918018?text=I am interested in Nekrahi Plot (Rs 650)" class="btn btn--whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Property 6: Farm Lands -->
+                    <div class="card prop-card">
+                        <div class="prop-card__img-wrap">
+                            <video src="./plot-video-5.mp4" controls muted loop style="width: 100%; aspect-ratio: 16/10; object-fit: cover;"></video>
+                            <div class="prop-card__badge badge badge--available">Large Space</div>
+                        </div>
+                        <div class="prop-card__body">
+                            <a href="#contact" class="prop-card__title-link"><h3 class="prop-card__title">#8 - Farm Land / Large Plots</h3></a>
+                            <div class="prop-card__location"><i class="fa-solid fa-location-dot"></i> Ayodhya Bypass Highway Sun International School Kaman Garh, highway se only 100meter under</div>
+                            
+                            <div class="prop-card__metrics">
+                                <div class="prop-card__metric">
+                                    <span class="prop-card__metric-label">Size</span>
+                                    <span class="prop-card__metric-value">Bigha Options</span>
+                                </div>
+                                <div class="prop-card__metric">
+                                    <span class="prop-card__metric-label">Type</span>
+                                    <span class="prop-card__metric-value">Agricultural</span>
+                                </div>
+                                <div class="prop-card__metric">
+                                    <span class="prop-card__metric-label">Status</span>
+                                    <span class="prop-card__metric-value">Available</span>
+                                </div>
+                            </div>
+
+                            <div class="prop-card__total">
+                                <span class="prop-card__total-label">Starting Price</span>
+                                <span class="prop-card__total-value prop-card__metric-value--price">₹700 / SqFt</span>
+                            </div>
+                            
+                            <div class="prop-card__features">
+                                <span class="prop-card__feature"><i class="fa-solid fa-check"></i> Great ROI</span>
+                                <span class="prop-card__feature"><i class="fa-solid fa-check"></i> Clear Title</span>
+                            </div>
+
+                            <div class="prop-card__ctas">
+                                <a href="tel:+919118918018" class="btn btn--secondary prop-card__detail-btn">Call Now</a>
+                                <a href="https://wa.me/919118918018?text=I am interested in Sun International School Plot (Rs 700)" class="btn btn--whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spotlight Property Details -->
+        <section id="property-details" class="section pd-hero" style="background:var(--color-surface); margin-top: var(--sp-10); border-top: 1px solid var(--color-border-light);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-header__label">SPOTLIGHT</span>
+                    <h2 class="section-header__title">Featured Property Details</h2>
+                </div>
+                
+                <div class="pd-hero__grid">
+                    <div class="pd-hero__image">
+                        <video src="./plot-video.mp4" controls muted loop style="width: 100%; aspect-ratio: 16/10; object-fit: cover; border-radius: var(--radius-lg);"></video>
+                    </div>
+                    <div class="pd-hero__info">
+                        <div class="badge badge--featured" style="width: fit-content; margin-bottom: 1rem;">🔥 HIGHWAY PRIME</div>
+                        <h1 class="pd-hero__title">Ayodhya Bypass Highway Plot</h1>
+                        <div class="pd-hero__location"><i class="fa-solid fa-location-dot"></i> Direct Highway Access, Sultanpur</div>
+                        
+                        <div class="pd-hero__price-box">
+                            <div class="pd-hero__price-row">
+                                <span class="pd-hero__price-label">Starting Area</span>
+                                <span class="pd-hero__price-value">1000 SqFt</span>
+                            </div>
+                            <div class="pd-hero__price-row">
+                                <span class="pd-hero__price-label" style="font-weight:600">Total Starting Price</span>
+                                <span class="pd-hero__price-total">Contact for Price</span>
+                            </div>
+                        </div>
+
+                        <div class="pd-hero__ctas">
+                            <a href="tel:+919118918018" class="btn btn--primary btn--full btn--lg">Book Site Visit</a>
+                            <a href="https://wa.me/919118918018?text=I want to know more about the Featured Property" class="btn btn--whatsapp btn--full btn--lg"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pd-details" style="margin-top: var(--sp-10)">
+                    <h3 class="section-header__title" style="font-size: var(--fs-h3); margin-bottom: var(--sp-4);">Property Overview</h3>
+                    <div class="pd-detail-grid">
+                        <div class="pd-detail-item">
+                            <span class="pd-detail-item__label">Property Type</span>
+                            <span class="pd-detail-item__value">Residential / Commercial</span>
+                        </div>
+                        <div class="pd-detail-item">
+                            <span class="pd-detail-item__label">Plot Area</span>
+                            <span class="pd-detail-item__value">1000 - 2000 SqFt</span>
+                        </div>
+                        <div class="pd-detail-item">
+                            <span class="pd-detail-item__label">Facing</span>
+                            <span class="pd-detail-item__value">East / North</span>
+                        </div>
+                        <div class="pd-detail-item">
+                            <span class="pd-detail-item__label">Road Width</span>
+                            <span class="pd-detail-item__value">40 Feet Damar Road</span>
+                        </div>
+                        <div class="pd-detail-item">
+                            <span class="pd-detail-item__label">Ownership</span>
+                            <span class="pd-detail-item__value">Freehold (Clear Title)</span>
+                        </div>
+                        <div class="pd-detail-item">
+                            <span class="pd-detail-item__label">Registry</span>
+                            <span class="pd-detail-item__value">Immediate (Dakhil Kharij)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pd-features" style="margin-bottom: var(--sp-10)">
+                    <h3 class="section-header__title" style="font-size: var(--fs-h3); margin-bottom: var(--sp-4);">Amenities & Highlights</h3>
+                    <ul class="pd-feature-list">
+                        <li><i class="fa-solid fa-check" style="color:var(--wa-500); margin-right:8px;"></i> Electricity Poles & Wiring</li>
+                        <li><i class="fa-solid fa-check" style="color:var(--wa-500); margin-right:8px;"></i> Proper Drainage System (Nali)</li>
+                        <li><i class="fa-solid fa-check" style="color:var(--wa-500); margin-right:8px;"></i> Commercial Frontage Available</li>
+                        <li><i class="fa-solid fa-check" style="color:var(--wa-500); margin-right:8px;"></i> Boundary Wall Secure</li>
+                        <li><i class="fa-solid fa-check" style="color:var(--wa-500); margin-right:8px;"></i> Near Hospitals & Markets</li>
+                        <li><i class="fa-solid fa-check" style="color:var(--wa-500); margin-right:8px;"></i> High ROI Potential</li>
+                    </ul>
+                </div>
+                
+                <div class="pd-pricing">
+                     <h3 class="section-header__title" style="font-size: var(--fs-h3); margin-bottom: var(--sp-4);">Pricing Information</h3>
+                     <div class="pd-pricing-table">
+                          <div class="pd-pricing-header">
+                               <div>Plot Size</div>
+                               <div>Dimension</div>
+                               <div>Availability</div>
+                          </div>
+                          <div class="pd-pricing-row">
+                               <div>1000 SqFt</div>
+                               <div>20 x 50</div>
+                               <div>Available</div>
+                          </div>
+                          <div class="pd-pricing-row">
+                               <div>1250 SqFt</div>
+                               <div>25 x 50</div>
+                               <div>Available</div>
+                          </div>
+                          <div class="pd-pricing-row">
+                               <div>1500 SqFt</div>
+                               <div>30 x 50</div>
+                               <div>Available</div>
+                          </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Locations -->
+        <section id="locations" class="section section--surface">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-header__label">LOCATIONS</span>
+                    <h2 class="section-header__title">Our Service Areas</h2>
+                    <p class="section-header__desc">Explore the most sought-after areas in Sultanpur with top connectivity.</p>
+                </div>
+                <div class="locations-grid">
+                    <a href="#properties" class="card location-card">
+                        <img src="./plot2.jpg" alt="Location" class="location-card__img">
+                        <div class="location-card__body">
+                            <h3 class="location-card__title">Ayodhya Bypass National Highway</h3>
+                            <p class="location-card__desc">Premium fully developed plots with instant registry and direct connectivity to the capital.</p>
+                            <span class="location-card__cta">View Plots <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="#properties" class="card location-card">
+                        <img src="./plot3.jpg" alt="Location" class="location-card__img">
+                        <div class="location-card__body">
+                            <h3 class="location-card__title">Purvanchal Expressway Connect</h3>
+                            <p class="location-card__desc">Strategic plots near the Expressway cut ensuring high ROI and fast travel.</p>
+                            <span class="location-card__cta">View Plots <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="#properties" class="card location-card">
+                        <img src="./plot4.jpg" alt="Location" class="location-card__img">
+                        <div class="location-card__body">
+                            <h3 class="location-card__title">Kamucha, Katka & Badshahpur</h3>
+                            <p class="location-card__desc">Prime residential hubs with easy access to city amenities, schools, and hospitals.</p>
+                            <span class="location-card__cta">View Plots <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Embedded Map -->
+                <div class="map-wrap" style="margin-top: 3rem;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114561.04257134371!2d81.99617304664972!3d26.2694155113943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a7c86d691219f%3A0x99a3eb1e8f26b5c!2sSultanpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section id="why-us" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-header__label">WHY CHOOSE US</span>
+                    <h2 class="section-header__title">The Sultanpur Plot Wale Advantage</h2>
+                    <p class="section-header__desc">We bring transparency, trust, and quality to your real estate investment.</p>
+                </div>
+                <div class="why-grid">
+                    <div class="why-card">
+                        <div class="why-card__icon" style="color:var(--gold-500)"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3 class="why-card__title">100% Clear Title & Dakhil Kharij</h3>
+                        <p class="why-card__desc">All our properties undergo rigorous legal checks to ensure clear titles and zero disputes. We guarantee Dakhil Kharij eligibility.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-card__icon" style="color:var(--gold-500)"><i class="fa-solid fa-road"></i></div>
+                        <h3 class="why-card__title">Fully Developed & Ready</h3>
+                        <p class="why-card__desc">Enjoy immediate possession with ready infrastructure including 30-40ft wide damar roads, electricity poles, and drainage.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-card__icon" style="color:var(--gold-500)"><i class="fa-solid fa-car"></i></div>
+                        <h3 class="why-card__title">Hassle-Free Free Site Visit</h3>
+                        <p class="why-card__desc">We offer free transportation and guided tours so you can inspect the plot, registry, and location details in person comfortably.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Steps to Buy -->
+        <section class="section section--dark">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-header__label">PROCESS</span>
+                    <h2 class="section-header__title">Simple Steps to Your Dream Plot</h2>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <span class="step-card__num">01</span>
+                        <h3 class="step-card__title">Select Plot</h3>
+                        <p class="step-card__desc">Choose your desired plot size (1000, 1250, 1500 sq ft) and location from our premium inventory.</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-card__num">02</span>
+                        <h3 class="step-card__title">Free Site Visit</h3>
+                        <p class="step-card__desc">Schedule a guided tour to experience the highway connectivity and infrastructure firsthand.</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-card__num">03</span>
+                        <h3 class="step-card__title">Document Verification</h3>
+                        <p class="step-card__desc">Inspect the registry papers and Dakhil Kharij documents for your complete peace of mind.</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-card__num">04</span>
+                        <h3 class="step-card__title">Booking & Registry</h3>
+                        <p class="step-card__desc">Complete the booking payment and receive immediate registry and possession of your property.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Buyer Guide -->
+        <section class="section">
+            <div class="container" style="max-width: 800px;">
+                <div class="section-header">
+                    <span class="section-header__label">BUYER GUIDE</span>
+                    <h2 class="section-header__title">Before You Book</h2>
+                    <p class="section-header__desc">Essential checklist to ensure a safe and secure property investment.</p>
+                </div>
+                <div class="card checklist-card">
+                    <div class="checklist-grid">
+                        <div class="checklist-item">
+                            <i class="fa-solid fa-check-circle" style="color:var(--wa-500)"></i>
+                            <span>Check Original Registry Documents</span>
+                        </div>
+                        <div class="checklist-item">
+                            <i class="fa-solid fa-check-circle" style="color:var(--wa-500)"></i>
+                            <span>Verify Dakhil Kharij Status</span>
+                        </div>
+                        <div class="checklist-item">
+                            <i class="fa-solid fa-check-circle" style="color:var(--wa-500)"></i>
+                            <span>Measure the Plot Dimensions Physically</span>
+                        </div>
+                        <div class="checklist-item">
+                            <i class="fa-solid fa-check-circle" style="color:var(--wa-500)"></i>
+                            <span>Check Road Width & Connectivity</span>
+                        </div>
+                        <div class="checklist-item">
+                            <i class="fa-solid fa-check-circle" style="color:var(--wa-500)"></i>
+                            <span>Confirm No Hidden Charges</span>
+                        </div>
+                        <div class="checklist-item">
+                            <i class="fa-solid fa-check-circle" style="color:var(--wa-500)"></i>
+                            <span>Assess Future Development Scope</span>
+                        </div>
+                    </div>
+                    <p class="checklist-note">Note: We highly encourage all buyers to personally verify these details during our free site visit.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQs -->
+        <section id="faq" class="section section--surface">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-header__label">FAQ</span>
+                    <h2 class="section-header__title">Frequently Asked Questions</h2>
+                </div>
+                <div class="faq-list" style="max-width: 800px; margin: 0 auto;">
+                    <details class="faq-item">
+                        <summary class="faq-item__q">Are the plots legally verified and Dakhil Kharij ready?</summary>
+                        <div class="faq-item__a">Yes, all our plots have 100% clear titles and are completely eligible for Dakhil Kharij. We perform extensive legal due diligence before listing any property to ensure a safe investment for our buyers.</div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__q">What plot sizes are available?</summary>
+                        <div class="faq-item__a">We offer a variety of standard plot dimensions including 1000, 1250, 1500, and 2000 sq ft. We also offer larger options for farm lands depending on the location.</div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__q">What amenities are provided in the developed plots?</summary>
+                        <div class="faq-item__a">Our premium plots come fully developed with 30ft to 40ft wide Damar roads, proper drainage (Nali), electricity poles (Bijli Kambha), boundary walls (in select locations), and easy access to nearby hospitals, schools, and markets.</div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__q">Can I get immediate possession?</summary>
+                        <div class="faq-item__a">Absolutely. Once the booking and registry is complete, you get instant possession of your plot and can start construction immediately.</div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-item__q">Do you arrange site visits and is there a fee?</summary>
+                        <div class="faq-item__a">We provide 100% FREE guided site visits with transport assistance. Simply contact us via WhatsApp or phone to schedule an appointment at your convenience.</div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact/Lead Form -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="card lead-form" style="max-width:800px; margin:0 auto">
+                    <div class="section-header">
+                        <h2 class="section-header__title">Schedule a Free Site Visit</h2>
+                        <p class="section-header__desc">Fill out the form below or contact us directly.</p>
+                    </div>
+                    
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <img src="./visiting-card.jpeg" alt="Visiting Card" style="max-width: 300px; border-radius: 10px; box-shadow: var(--shadow-md); margin: 0 auto;">
+                    </div>
+
+                    <form id="contact-form">
+                        <div class="lead-form__grid">
+                            <div class="lead-form__field">
+                                <label>Full Name</label>
+                                <input type="text" id="name" required placeholder="Enter your name">
+                            </div>
+                            <div class="lead-form__field">
+                                <label>Phone Number</label>
+                                <input type="tel" id="phone" required placeholder="Enter WhatsApp number">
+                            </div>
+                        </div>
+                        <div class="lead-form__field lead-form__field--full">
+                            <label>Preferred Location / Requirements</label>
+                            <textarea id="message" placeholder="E.g., Looking for a 1000 sq ft plot near Ayodhya Bypass Highway..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full btn--lg">Send Inquiry via WhatsApp</button>
+                        <p class="lead-form__disclaimer">We respect your privacy. No spam guaranteed.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <div class="footer__logo">
+                        <img src="./logo.jpg" alt="Sultanpur Plot Wale Logo" class="footer__logo-img" style="height: 64px; width: auto; object-fit: contain; border-radius: 50%;">
+                        <span class="footer__logo-name">Sultanpur Plot Wale</span>
+                    </div>
+                    <p class="footer__desc">Your trusted real estate partner in Sultanpur. We specialize in premium, verified, and fully developed residential and commercial plots.</p>
+                    <div class="footer__contact-info">
+                        <a href="tel:+919118918018" class="footer__phone"><i class="fa-solid fa-phone"></i> +91 91189 18018</a>
+                        <a href="tel:+918810916574" class="footer__phone"><i class="fa-solid fa-phone"></i> +91 88109 16574</a>
+                        <a href="https://wa.me/919118918018" class="btn btn--whatsapp btn--sm footer__wa-btn">Message on WhatsApp</a>
+                    </div>
+                </div>
+                
+                <div class="footer__col">
+                    <h4 class="footer__heading">Quick Links</h4>
+                    <a href="#home" class="footer__link">Home</a>
+                    <a href="#properties" class="footer__link">Plots For Sale</a>
+                    <a href="#locations" class="footer__link">Top Locations</a>
+                    <a href="#why-us" class="footer__link">Why Choose Us</a>
+                    <a href="#faq" class="footer__link">FAQs</a>
+                </div>
+                
+                <div class="footer__col">
+                    <h4 class="footer__heading">Top Locations</h4>
+                    <a href="#properties" class="footer__link">Ayodhya Bypass Highway</a>
+                    <a href="#properties" class="footer__link">Purvanchal Expressway</a>
+                    <a href="#properties" class="footer__link">Kamucha & Katka</a>
+                    <a href="#properties" class="footer__link">Badshahpur & Amhat</a>
+                </div>
+                
+                <div class="footer__col">
+                    <h4 class="footer__heading">Follow Us</h4>
+                    <a href="https://instagram.com/sultanpurplotwale9595" target="_blank" class="footer__link"><i class="fa-brands fa-instagram"></i> @sultanpurplotwale9595</a>
+                    
+                    <h4 class="footer__heading" style="margin-top: 1.5rem">Popular Tags</h4>
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                        <span style="font-size: 12px; color: var(--navy-400);">#plots</span>
+                        <span style="font-size: 12px; color: var(--navy-400);">#sultanpur</span>
+                        <span style="font-size: 12px; color: var(--navy-400);">#plotsinsultanpur</span>
+                        <span style="font-size: 12px; color: var(--navy-400);">#realestate</span>
+                        <span style="font-size: 12px; color: var(--navy-400);">#property</span>
+                        <span style="font-size: 12px; color: var(--navy-400);">#ayodhyabypass</span>
+                        <span style="font-size: 12px; color: var(--navy-400);">#sultanpurplotwale</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <div class="footer__bottom-inner">
+                    <div class="footer__bottom-left">
+                        <p>&copy; 2026 Sultanpur Plot Wale. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom Bar -->
+    <div class="mobile-bar">
+        <a href="tel:+919118918018" class="mobile-bar__item mobile-bar__item--call">
+            <i class="fa-solid fa-phone fa-lg"></i>
+            <span>Call</span>
+        </a>
+        <a href="https://wa.me/919118918018" class="mobile-bar__item mobile-bar__item--wa">
+            <i class="fa-brands fa-whatsapp fa-lg"></i>
+            <span>WhatsApp</span>
+        </a>
+        <a href="#contact" class="mobile-bar__item mobile-bar__item--visit">
+            <i class="fa-solid fa-calendar-check fa-lg"></i>
+            <span>Visit</span>
+        </a>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
